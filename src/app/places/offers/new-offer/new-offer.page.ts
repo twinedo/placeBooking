@@ -45,7 +45,6 @@ export class NewOfferPage implements OnInit {
   }
 
   onCreateOffer() {
-    
     if (!this.form.valid) {
       return;
     }
@@ -67,9 +66,5 @@ export class NewOfferPage implements OnInit {
       });
     });
     // console.log(this.form);
-    
-
-    
   }
-
 }
