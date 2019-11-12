@@ -24,6 +24,7 @@ export class AuthPage implements OnInit {
   ngOnInit() {
   }
 
+
   onLogin() {
     this.isLoading = true;
     this.authService.login();

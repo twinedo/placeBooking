@@ -67,7 +67,8 @@ export class PlacesService {
   ) { }
 
   fetchPlaces() {
-    return this.http.get<{[key: string]: PlaceData}>('https://ezplore-id.firebaseio.com/offered-places.json')
+    return this.http.get<{[key: string]: PlaceData}>(
+      'https://ionic-angular-course.firebaseio.com/offered-places.json')
     .pipe(map(resData => {
       const places = [];
       for (const key in resData) {
